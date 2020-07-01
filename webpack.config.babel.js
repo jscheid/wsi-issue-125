@@ -27,6 +27,7 @@ export default {
       algorithm: "gzip",
       test: /\.(js|css)$/,
       threshold: 0,
+      minRatio: 10,
     }),
     new CompressionPlugin({
       filename: "[path].br[query]",
@@ -36,6 +37,7 @@ export default {
         level: 11,
       },
       threshold: 0,
+      minRatio: 10,
     }),
   ],
 };

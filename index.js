@@ -1,1 +1,1 @@
-document.body.innerHTML = "success";
+import("./test.js").then(({ default: test }) => test());
